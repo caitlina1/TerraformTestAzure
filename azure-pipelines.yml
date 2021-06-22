@@ -58,5 +58,6 @@ stages:
       - task: TerraformCLI@0
         inputs:
           command: 'apply'
+          workingDirectory: $(terraformWorkingDirectory)
           environmentServiceName: $(serviceConnection)
           allowTelemetryCollection: true
