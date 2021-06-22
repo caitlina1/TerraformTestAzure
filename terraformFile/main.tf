@@ -4,7 +4,7 @@ provider "azurerm" {
 
 
 resource "azurerm_resource_group" "ca825e-rg4" {
-  name     = "ca825e-rg2"
+  name     = "ca825e-rg4"
   location = "eastus"
 }
 
