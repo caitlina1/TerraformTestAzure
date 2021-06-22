@@ -55,8 +55,6 @@ stages:
           command: plan
           workingDirectory: $(terraformWorkingDirectory)
           environmentServiceName: $(serviceConnection)
-          commandOptions: -var location=$(azureLocation)
-
       - task: TerraformCLI@0
         inputs:
           command: 'apply'
