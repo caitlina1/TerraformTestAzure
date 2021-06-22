@@ -63,5 +63,5 @@ stages:
       - task: TerraformCLI@0
         inputs:
           command: 'apply'
-          environmentServiceName: 'ACC-NPRD-30778-AstraAzureSandboxCSO(1)(4511f8f4-a477-49a2-8fc7-23596200685e)'
+          environmentServiceName: $(serviceConnection)
           allowTelemetryCollection: true
