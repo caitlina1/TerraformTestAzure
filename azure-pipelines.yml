@@ -61,11 +61,3 @@ stages:
           workingDirectory: $(terraformWorkingDirectory)
           environmentServiceName: $(serviceConnection)
           allowTelemetryCollection: true
-
-      - task: TerraformCLI@0
-        displayName: 'Run terraform destroy'
-        inputs:
-          command: 'destroy'
-          workingDirectory: $(terraformWorkingDirectory)
-          environmentServiceName: $(serviceConnection)
-          allowTelemetryCollection: true
