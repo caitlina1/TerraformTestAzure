@@ -32,13 +32,6 @@ stages:
         displayName: 'Install Terraform'
         inputs:
           terraformVersion: $(terraformVersion)
-      # Step 3: run Terraform init to initialize the workspace
-      - task: charleszipp.azure-pipelines-tasks-terraform.azure-pipelines-tasks-terraform-cli.TerraformCLI@0
-        displayName: 'Run terraform init'
-        inputs:
-          command: init
-          workingDirectory: $(terraformWorkingDirectory)
-
       - task: TerraformCLI@0
         displayName: 'Run terraform destroy'
         inputs:
